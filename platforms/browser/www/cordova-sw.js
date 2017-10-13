@@ -18,7 +18,7 @@ under the License.
 */
 
 // Note, these will be updated automatically at build time
-var CACHE_VERSION = '1507835259860';
+var CACHE_VERSION = '1507853208480';
 var CACHE_LIST = [
     "/LICENSE",
     "/README.md",
@@ -32,11 +32,13 @@ var CACHE_LIST = [
     "/css/index.css",
     "/css/sb-admin.css",
     "/css/sb-admin.min.css",
+    "/facturasjs/config.js",
     "/favicon.ico",
     "/forgot-password.html",
     "/gulpfile.js",
     "/img/logo.png",
     "/index.html",
+    "/indexb.html",
     "/js/index.js",
     "/js/sb-admin-charts.js",
     "/js/sb-admin-charts.min.js",
