@@ -11,8 +11,8 @@ var FacturasCR = (function(){
   function FacturasCR(){}
 
   FacturasCR.prototype.parentVars = function(){
-    //this.baseUrl = "http://localhost:8766/";
-    this.baseUrl = "http://crfut.com/";
+    this.baseUrl = "http://localhost:8766/";
+    //this.baseUrl = "http://crfut.com/";
   }
 
   FacturasCR.UrlVars = function() {
@@ -67,6 +67,25 @@ var FacturasCR = (function(){
         sources:["/css/alarm_beep.wav"]
       }
     }).show();
+  }
+
+  FacturasCR.prototype.modelErrors = function(errObj){
+console.log(errObj);
+    for (var err in errObj){
+console.log(err);
+var oeb = errObj[err];
+      for(var oe in oeb){
+        console.log(oe);
+        console.log(oeb[oe]);
+      }
+    //  var keys= Object.keys(err);
+    //  for (var i=0; i<keys.length; i++){
+ //console.log(err[keys[i]]); //multiple all property values of object
+}
+      //for(var m in err){
+        //this.alert_error(err.toString() + ' ' + m.toString());
+      //}
+    //}
   }
 
   FacturasCR.prototype.checkTimedOut = function(data){
